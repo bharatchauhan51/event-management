@@ -1,0 +1,39 @@
+<div id="wrapper" class="animate">
+    <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark bg-custom">
+      <span class="navbar-toggler-icon leftmenutrigger"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png"
+        width="30" alt="" class="d-inline-block align-middle mr-2"></a>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav animate side-nav">
+          <li class="nav-item">
+            <a class="nav-link py-3" [routerLink]="['/admin/home']" [class.active]="router.isActive('/admin/home', true)">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" [routerLink]="['/admin/events']" [class.active]="router.isActive('/admin/events', true)">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" [routerLink]="['/admin/participants']" [class.active]="router.isActive('/admin/participants', true)">Participants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" [routerLink]="['/admin/users']" [class.active]="router.isActive('/admin/users', true)">Users</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="../../assets/team-3.jpg" alt="Avatar" class="avatar mr-3">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <router-outlet></router-outlet>
+    
+  </div>
+  
+  <div class="footer">
+    Copyright &#169; Public Speaking Forum. Designed by - Designer Name
+  </div>
