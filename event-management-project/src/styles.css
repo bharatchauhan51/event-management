@@ -1,9 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    font-family: 'Poppins';
+    font-family: 'EquipW03-Light', 'Roboto', sans-serif;
+    font-size: 14px;
     scroll-behavior: smooth;
 }
 
-.btn-primary {
-    border-radius: 20px 20px 20px 0px !important;
+body {
+    overflow-x: hidden;
+}
+
+@keyframes top-to-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) rotateX(30deg);
+    }
+    80% {
+        transform: translateY(3px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bottom-to-top {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) rotateZ(3deg);
+    }
+    80% {
+        transform: rotateZ(-1deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) rotateZ(0deg);
+    }
+}
+
+.animation-top-to-bottom {
+    animation-name: top-to-bottom;
+    animation-delay: 0.5s;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
 }
