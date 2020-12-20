@@ -1,0 +1,162 @@
+<app-breadcrumbs></app-breadcrumbs>
+
+<div>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 heading">
+          Event Details
+        </div>
+        <div class="col-12 sub-header">
+          <div class="sub-heading">
+            The Federation presents “The International Public Speaking Summit 2021: The
+                celebration of public speaking”.
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="outer-section">
+    <div class="container">
+      <div class="row inner-section p-5">
+
+        <div class="col-12 animation-block">
+          <div class="row align-items-center">
+            <div class="col-md-2 col-sm-12 col-xs-12 numbering">01</div>
+            <div class="col-md-10 col-sm-12 col-xs-12 topic-heading">About the Events</div>
+          </div>
+          <div class="row">
+            <div class="col-2 col-sm-0 col-xs-0"></div>
+            <div class="col-md-10 col-sm-12 col-xs-12">
+              <div class="topic-content">The Federation presents “The International Public Speaking Summit 2021: The
+                celebration of public speaking”.</div>
+              <div class="topic-content">IPSS 2021 is the brainchild of the organization and will stand for ingenuity
+                and excellence. It aims to redefine the already-accepted standards of debate competitions and be an
+                amalgamation of fierce discussions and intellectual projections, which will ultimately contribute to the
+                knowledge expansion of the youth. It also aims to be a platform for diversified engagement of aspiring
+                public speakers from all over the world to come together and experience the art of public speaking.
+              </div>
+              <div class="topic-content"><br><strong class="topic-content">IPSS 2021 Aims to:</strong>
+                <ul class="mt-2">
+                  <li class="points topic-content">
+                    <strong class="topic-content">Review</strong> – A review of the structure of current public speaking
+                    events conducted.
+                  </li>
+                  <li class="points topic-content">
+                    <strong class="topic-content">Resolve</strong> – A resolve to provide participants with a memorable
+                    debating experience.
+                  </li>
+                  <li class="points topic-content">
+                    <strong class="topic-content">Reform</strong> – A reform of various public speaking events to
+                    resemble the standard of competitions
+                    conducted internationally.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="topic-content"><strong class="topic-content">Events:</strong> 14 competitions are set to be
+                conducted on different dates, which are as follows:</div>
+
+              <ul class="mt-2">
+                <li class="points topic-content">
+                  <strong class="topic-content">Youth Parliament</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Model United Nations</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Public Forum Debate</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Just a Minute</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Speaking to Persuade</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Speaking to Inform</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">1 vs. 1 Style of Debating</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Policy Debating</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Block and Tackle</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Open Category</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Open Mic</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Storyfying</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Monologue this!</strong>
+                </li>
+                <li class="points topic-content">
+                  <strong class="topic-content">Aircrash</strong>
+                </li>
+              </ul>
+
+              <div class="topic-content"><br><strong class="topic-content">Dates:</strong> 8th January 2021 to 12th
+                January 2021</div>
+
+              <div class="topic-content"><br><strong class="topic-content">Venue:</strong> Online – Zoom</div>
+
+              <div class="topic-content"><br><strong class="topic-content">Who can apply?</strong>
+                <ul class="mt-2">
+                  <li class="points topic-content">
+                    <strong class="topic-content">School students</strong> – 14 years and above
+                  </li>
+                  <li class="points topic-content">
+                    <strong class="topic-content">University/College students</strong>
+                  </li>
+                  <li class="points topic-content">
+                    <strong class="topic-content">Open Category for Corporate employees</strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row align-items-center">
+            <div class="col-md-2 col-sm-12 col-xs-12 numbering">02</div>
+            <div class="col-md-10 col-sm-12 col-xs-12 topic-heading">All Events</div>
+          </div>
+          <div class="row">
+            <div class="col-2 col-sm-0 col-xs-0"></div>
+
+            <div class="col-md-10 col-sm-12 col-xs-12 topic-heading">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 topic-content h-100" *ngFor="let eventDetail of eventDetails">
+                  <div class="card">
+                    <div class="content">
+                      <h6>{{eventDetail.name}}</h6>
+                      <div class="hover_content">
+                        <p>{{eventDetail.description}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <button class="btn btn-primary" (click)="downloadBrochure()">Download Brochure of all Events</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
