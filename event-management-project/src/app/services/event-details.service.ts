@@ -9,19 +9,13 @@ export class EventDetailService {
     {
       id: 1,
       name: 'YOUTH PARLIAMENT',
-      description: 'Register yourself in this event to experience the power of being a member of parliament and put your debating skills to test.',
+      description: 'Register yourself in this event to experience the power of being a member of parliament and put your debating skills to test. Topics : Juveniles should be treated as adults, Economic growth can be sacrificed for the good of environment.',
       brochureLink: 'https://www.google.co.in'
     },
     {
       id: 2,
       name: 'MODEL UNITED NATIONS',
-      description: 'Register yourself in this even to give a voice to the country you want to make a difference to and see its progress.',
-      brochureLink: 'https://www.google.co.in'
-    },
-    {
-        id: 3,
-      name: 'PUBLIC FORUM DEBATE',
-      description: 'Register yourselves in this event to demonstrate your sharp thinking and speaking skills as a group.',
+      description: 'Register yourself in this even to give a voice to the country you want to make a difference to and see its progress. Topic: Expanding the mandate of the United Nations Charter to humanoid robots.',
       brochureLink: 'https://www.google.co.in'
     },
     {
@@ -33,19 +27,13 @@ export class EventDetailService {
     {
         id: 5,
       name: 'SPEAKING TO PERSUADE',
-      description: 'Register yourself in this event if you think you can persuade the audience and sell your idea like a pro.',
+      description: 'Register yourself in this event if you think you can persuade the audience and sell your idea like a pro. Topic: Animal testing should be banned.',
       brochureLink: 'https://www.google.co.in'
     },
     {
         id: 6,
       name: 'SPEAKING TO INFORM',
-      description: 'Register yourself in this event to prove your knowledge dissemination and clarity of thoughts.',
-      brochureLink: 'https://www.google.co.in'
-    },
-    {
-        id: 7,
-      name: 'POLICY DEBATING',
-      description: 'Register yourselves in this event if you think you can unravel the harms in the current system through your constructive plan or policy action.',
+      description: 'Register yourself in this event to prove your knowledge dissemination and clarity of thoughts. Topics: How does culture shock affect an individual?',
       brochureLink: 'https://www.google.co.in'
     },
     {
@@ -57,7 +45,7 @@ export class EventDetailService {
     {
         id: 9,
       name: 'BLOCK AND TACKLE',
-      description: 'Register yourself in this event to speak for and against your standpoint. Sounds contradicting, doesn’t it?',
+      description: 'Register yourself in this event to speak for and against your standpoint. Sounds contradicting, doesn’t it? Topics: System of paid news should be banned, Torture is not justified irrespective of the situation, Diet pills should be banned, Money is the biggest workplace motivation.',
       brochureLink: 'https://www.google.co.in'
     },
     {

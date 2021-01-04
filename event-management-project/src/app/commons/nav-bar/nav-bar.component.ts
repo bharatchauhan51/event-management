@@ -60,4 +60,8 @@ export class NavbarComponent {
       this.isMenuVisible = false;
     }
   }
+
+  DownloadSchedule() {
+    window.open('/assets/event_schedule.pdf', '_blank');
+  }
 }

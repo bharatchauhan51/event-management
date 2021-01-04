@@ -60,6 +60,7 @@
     margin-left: 2rem;
     color: #ffffff !important;
     font-weight: bold;
+    cursor: pointer;
   }
 
   .nav-link-color {

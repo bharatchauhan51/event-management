@@ -61,4 +61,12 @@ export class RegisterEventsComponent {
   RegisterHere() {
     window.location.href = 'https://docs.google.com/forms/d/1yO7VdNtak6RvlLTQBScsRYHZmVbd1Crq1FMCThIF2Pc/viewform?edit_requested=true'
   }
+
+  GetPaymentReciept() {
+    window.location.href = 'https://forms.gle/g3PD7edjjX1VPfme7'
+  }
+
+  OpenMicAudienceForm() {
+    window.location.href = 'https://forms.gle/rTzcNKgWtxKF3Kqw7'
+  }
 }

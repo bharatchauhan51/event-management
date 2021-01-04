@@ -42,6 +42,11 @@
           [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''" [ngClass]="isMenuVisible ? 'nav-link-align' : ''"
           [routerLink]="['about-us']">About Us</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" data-target="#navbarToggler"
+          [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''" [ngClass]="isMenuVisible ? 'nav-link-align' : ''"
+          (click) = "DownloadSchedule()">Download Schedule</a>
+      </li>
     </ul>
 
     <div class="footer-background">
