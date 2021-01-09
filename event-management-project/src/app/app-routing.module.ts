@@ -1,3 +1,4 @@
+import { OpenMicSpeakersComponent } from './open-mic-speakers/open-mic-speakers.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -27,9 +28,18 @@ const routes: Routes = [
     component: RegisterEventsComponent
   },
   {
-    path: 'registration/:eventId',
-    component: RegistrationFormComponent
+    path: 'registration/open-mic-speakers',
+    component: OpenMicSpeakersComponent
   },
+  {
+    path: 'event-details/open-mic-speakers',
+    component: OpenMicSpeakersComponent
+  }
+  // ,{
+  //   path: 'registration/:eventId',
+  //   component: RegistrationFormComponent
+  // }
+  ,
   {
     path: 'about-us',
     component: AboutUsComponent

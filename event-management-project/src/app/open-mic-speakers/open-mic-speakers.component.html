@@ -5,11 +5,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 heading">
-                    Register for Events
+                    Open Mic Speakers
                 </div>
                 <div class="col-12 sub-header">
                     <div class="sub-heading">
-                        Register here for events related to International Public Speaking Summit. You can also find the details of our events below.
+                        Introducing our mic speakers for International Public Speaking Summit 2021.
                     </div>
                 </div>
             </div>
@@ -23,22 +23,23 @@
                 <div class="col-12">
                     <div class="row align-items-center">
                         <div class="col-md-2 col-sm-12 col-xs-12 numbering">01</div>
-                        <div class="col-md-10 col-sm-12 col-xs-12 topic-heading">Register for Events</div>
+                        <div class="col-md-10 col-sm-12 col-xs-12 topic-heading">Our Speakers</div>
                     </div>
                     <div class="row">
                         <div class="col-2 col-sm-0 col-xs-0"></div>
                         <div class="col-md-10 col-sm-12 col-xs-12 topic-heading">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-12 topic-content h-100"
-                                    *ngFor="let eventDetail of eventDetails">
+                                    *ngFor="let speaker of openMicSpeakers">
                                     <div class="card">
                                         <div class="content">
-                                            <h6>{{eventDetail.name}}</h6>
+                                            <h6 style="margin-bottom:1rem;">{{speaker.name}}</h6>
                                             <div class="hover_content">
-                                                <p>{{eventDetail.description}}</p>
-                                                <div *ngIf="eventDetail.name == 'OPEN MIC'">
-                                                    <button class="btn btn-primary" [routerLink]="['open-mic-speakers']">Know more about our speakers?</button>
-                                                </div>
+                                                <img class="speaker-img" [src]="speaker.imageUrl"/>
+                                                
+                                                <a [href]="speaker.descriptionUrl" target="_blank">
+                                                    <button class="btn btn-primary">Know More</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -46,17 +47,17 @@
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                  <button class="btn btn-primary" (click)="RegisterHere()">Click Here to <strong>Register</strong> for any event</button>
+                                  <!-- <button class="btn btn-primary" (click)="RegisterHere()">Click Here to <strong>Register</strong> for any event</button> -->
                                 </div>
                               </div>
                               <div class="row">
                                 <div class="col-12">
-                                  <button class="btn btn-primary" (click)="GetPaymentReciept()">Click Here to get payment details</button>
+                                  <!-- <button class="btn btn-primary" (click)="GetPaymentReciept()">Click Here to get payment details</button> -->
                                 </div>
                               </div>
                               <div class="row">
                                 <div class="col-12">
-                                  <button class="btn btn-primary" (click)="OpenMicAudienceForm()">Click Here to <strong>Register</strong> as audience for Open Mic.</button>
+                                  <!-- <button class="btn btn-primary" (click)="OpenMicAudienceForm()">Click Here to <strong>Register</strong> as audience for Open Mic.</button> -->
                                 </div>
                               </div>
                         </div>

@@ -141,6 +141,9 @@
                       <h6>{{eventDetail.name}}</h6>
                       <div class="hover_content">
                         <p>{{eventDetail.description}}</p>
+                        <div *ngIf="eventDetail.name == 'OPEN MIC'">
+                          <button class="btn btn-primary" [routerLink]="['open-mic-speakers']">Know more about our speakers?</button>
+                      </div>
                       </div>
                     </div>
                   </div>

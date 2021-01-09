@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterEventsComponent } from './register-events/register-events.component';
+import { OpenMicSpeakersComponent } from './open-mic-speakers/open-mic-speakers.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { RegisterEventsComponent } from './register-events/register-events.compo
     AdminParticipantsComponent,
     AdminUsersComponent,
     TimerComponent,
-    FooterComponent
+    FooterComponent,
+    OpenMicSpeakersComponent
   ],
   imports: [
     BrowserModule,

@@ -16,8 +16,7 @@ export class NavbarComponent {
   constructor(public router: Router) { 
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        console.log(event.url);
-        if (event.url === '/team' || event.url.includes('/registration') || event.url === '/about-us' || event.url === '/event-details') {
+        if (event.url === '/team' || event.url.includes('/registration') || event.url === '/about-us' || event.url.includes('/event-details')) {
           this.changeBackgroundOnRoute = true;
         } else {
           this.changeBackgroundOnRoute = false;
